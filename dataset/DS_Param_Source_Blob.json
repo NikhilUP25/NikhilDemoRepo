@@ -1,16 +1,31 @@
 {
-	"name": "DS_Source",
+	"name": "DS_Param_Source_Blob",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_BlobToBlob",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			},
+			"FolderName": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "input",
+				"fileName": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().FolderName",
+					"type": "Expression"
+				},
 				"container": "nikhil"
 			},
 			"columnDelimiter": ",",
@@ -18,19 +33,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "EmpId",
-				"type": "String"
-			},
-			{
-				"name": "Name",
-				"type": "String"
-			},
-			{
-				"name": "Country",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
