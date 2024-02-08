@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://opendata.ecdc.europa.eu/covid19/COVID-19_VC_data_from_September_2023/xlsx/",
+			"url": "https://opendata.ecdc.europa.eu/covid19/COVID-19_VC_data_from_September_2023/json/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
