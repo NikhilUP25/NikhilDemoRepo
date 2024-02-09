@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "covid19/COVID-19_VC_data_from_September_2023/csv/"
+				"relativeUrl": "covid19/COVID-19_VC_data_from_September_2023/csv/data_v7.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
