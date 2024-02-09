@@ -1,0 +1,24 @@
+{
+	"name": "DS_WebsiteData_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BlobToBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Covid_Data",
+				"folderPath": "output",
+				"container": "nikhil"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

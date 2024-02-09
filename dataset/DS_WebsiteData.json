@@ -1,0 +1,22 @@
+{
+	"name": "DS_WebsiteData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Http",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "covid19/COVID-19_VC_data_from_September_2023/csv/"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
